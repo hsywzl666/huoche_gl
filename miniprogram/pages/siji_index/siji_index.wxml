@@ -1,0 +1,31 @@
+
+<view class="box" wx:for="{{list}}" wx:key="index">
+      <view wx:if="{{item.paizhaose=='CornflowerBlue'}}" class="chepai" >                                              
+            <view class="z" style="background:CornflowerBlue; color: #ffffff;" >{{item.chepai.pai_tou}}</view>
+            <view  class="y" style="background:CornflowerBlue; color: #ffffff;" >{{item.chepai.pai_wei}}</view>               
+      </view>
+      <view  wx:elif="{{item.paizhaose=='#fafcfe'}}" class="chepai" >                                           
+            <view class="z" style=" background:orange;" >{{item.chepai.pai_tou}}</view>
+            <view class="y" style="background:#48b14e" >{{item.chepai.pai_wei}}</view>     
+            </view> 
+        <view  wx:elif="{{item.paizhaose=='#48b14e'}}" class="chepai" >                                           
+        <view class="z" style=" background:#48b14e;" >{{item.chepai.pai_tou}}</view>
+        <view class="y" style="background:#48b14e" >{{item.chepai.pai_wei}}</view>     
+        </view>
+        <view  wx:elif="{{item.paizhaose=='#f4a31f'}}" class="chepai" >                                           
+        <view class="z" style=" background:#f4a31f;" >{{item.chepai.pai_tou}}</view>
+        <view class="y" style="background:#f4a31f" >{{item.chepai.pai_wei}}</view>     
+        </view>
+  <view class="a" style="border: 1px solid {{chebiao_color}}">
+            <image
+            class="baoxian" src="../../images/{{item.baocun_chexing}}.png" style="display: inline-block;"></image>       
+  </view>
+  <block wx:if="{{item.jingying==true}}">
+    <view   class="b" style="border:6px solid  #a7a7aa;   background-color:{{color}}; ">
+          <view wx:if="{{item.che_jiazhi >= 10000}}" class="baoxian" bindtap="siji_yunying__xingqing" id="{{item._id}}"  >{{-item.che_jiazhi/10000}}万</view>
+          <view wx:else  class="baoxian" bindtap="siji_yunying__xingqing" id="{{item._id}}"><text>{{-item.che_jiazhi}}元</text></view>
+    </view>
+  </block>  
+    <view wx:else></view>
+
+</view>

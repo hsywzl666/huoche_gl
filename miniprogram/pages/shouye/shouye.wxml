@@ -1,0 +1,18 @@
+<view class="chuangkou">
+  <view bindtap="sj" >
+    <image
+  class="sj" src="../../images/jiashi.png"></image>
+  <text  class="ziti">我的座驾</text>
+  </view>
+ <view bindtap="chezhu" >
+  <image
+  class="chezhu" src="../../images/che.png"></image>
+  <text class="ziti">我的财产</text>
+ </view>
+ <view bindtap="zhengjian" >
+    <image
+  class="sj" src="../../images/jiazhao.png"></image>
+  <text  class="ziti">我的证件</text>
+  </view>
+
+</view>

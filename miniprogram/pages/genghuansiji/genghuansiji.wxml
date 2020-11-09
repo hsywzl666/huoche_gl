@@ -1,0 +1,3 @@
+<!--pages/genghuansiji/genghuansiji.wxml-->
+<button bindtap="huansiji" class="huansiji">我接收</button>
+

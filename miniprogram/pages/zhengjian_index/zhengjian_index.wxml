@@ -1,0 +1,99 @@
+<!--pages/zhengjian_index/zhengjian_index.wxml-->
+<view wx:if="{{!yemianqiehuan}}" class="kj">
+<view class="jiazhao" wx:if="{{!xianshi==false}}">
+  <view class="jialing">
+      您的驾龄
+      <view wx:if="{{jialing.nain>0}}"  style="background-color:#d9a30d" >{{jialing.nain}}年</view>
+      <view wx:else>才</view>
+      <view wx:if="{{jialing.yue>0}}">{{jialing.yue}}个月</view>
+      <view wx:else></view>
+    </view>
+
+      <view class="jialing" >
+     (满分学习)
+      <view class="jialing" style="background-color: 	#31752f; color: #e9ebec;" wx:if="{{yanzhengyue>0}}">还有{{yanzhengyue}}个月
+        <view wx:if="{{yanzhengri>0}}">{{yanzhengri}}天</view>
+      <view wx:else>整</view>
+      </view>
+      <view class="jialing" wx:else style="background-color: brown; color: #e9ebec;">还有
+        <view wx:if="{{yanzhengri>0}}">{{yanzhengri}}天</view>
+      <view wx:else>整</view>
+      </view>
+    
+    </view>
+    <view class="jialing" >
+     
+     <view style="background-color: brown; color: #e9ebec;" wx:if="{{jiazhao_shixiao==false}}">您的驾照已经失效</view>
+     <view class="heng" wx:else >
+      驾照有效期
+      <view class="jialing" wx:if="{{huan_zhengnian>0}}">还有{{huan_zhengnian}}年
+                <view wx:if="{{huan_zhengyue>0}}">{{huan_zhengyue}}个月</view>
+                <view wx:else>零</view>
+                <view wx:if="{{huan_zhengri>0}}">{{huan_zhengri}}天</view>
+                <view wx:else></view>
+      </view>
+      <view class="jialing" wx:else style="color: #f03114;">还有
+                <view class="heng" wx:if="{{huan_zhengyue>3}}">{{huan_zhengyue}}个月
+                  <view wx:if="{{huan_zhengri>0}}">{{huan_zhengri}}天</view>
+                  <view wx:else></view>
+                </view>
+                <view class="heng" wx:else  style="background-color: brown; color: #e9ebec;">
+                  <view wx:if="{{huan_zhengyue>0}}"> {{huan_zhengyue}}个月
+                  </view>
+                  <view wx:if="{{huan_zhengri>0}}">{{huan_zhengri}}天</view>
+                  <view wx:else></view>
+           
+                </view>
+  
+      </view>
+    </view>
+    </view>
+</view>
+<view bindtap="jiazhao_zhuce" wx:else >
+  请注册
+</view>
+</view>
+<view class="zhuce_kj" wx:else>
+        <view class="zhenghao">
+          <view class="z">证号:</view>
+          <input type="text" maxlength="18" auto-focus placeholder="输入证号"  type="number"    name="textfield"  bindinput="zhenghao"/>
+        </view>
+<view class="xingming">
+<view class="ming">
+  <input type="text" maxlength="10" auto-focus placeholder="输入姓名"   name="textfield"  bindinput="xingming"/>
+</view>
+<view class='xingbie' bindtap='bindShowMsg'>
+    <text>{{xingbie}}</text>
+    
+  </view>
+  <!-- 下拉需要显示的列表 -->
+  <view class="select_box" wx:if="{{select}}">
+    <view wx:for="{{xingbies}}" wx:key="unique">
+      <view class="select_one" bindtap="mySelect" data-name="{{item}}">{{item}}</view>
+    </view>
+  </view>
+<!-- <view class="xingbie">
+  <input type="text" maxlength="1" auto-focus placeholder="性别"   name="textfield"  bindinput="xingbie"/>
+</view> -->
+<view class="dangan_bianhao">
+  <view class="youxiaoqi_z">档案编号:</view>
+  <input type="text" maxlength="12" auto-focus placeholder="" type="number"    name="textfield"  bindinput="dangan_bianhao"/>
+</view>
+</view>
+<view class="lingzgeng">
+  <view class="youxiaoqi_z">初次领证:</view>
+  <input type="text" type="number"   maxlength="8" auto-focus placeholder="   xxxx-xx-xx"   name="textfield"  bindinput="lingzgeng"/>
+</view>
+<view class="lingzgeng">
+  <view class="youxiaoqi_z">准驾车型:</view>
+  <input type="text" bindinput="inputFn"  maxlength="4" auto-focus placeholder="   准驾车型"   name="textfield"  />
+</view>
+<view class="chexing">
+  {{chexing}}
+</view>
+<view class="youxiaoqi">
+  <view class="youxiaoqi_z">有效期至:</view>
+  <input type="text"  type="number"   maxlength="8" auto-focus placeholder="xxxx-xx-xx"   name="textfield"  bindinput="youxiaoqi"/>
+</view>
+<view class="zhuce" bindtap="zhuce">注册</view>
+</view>

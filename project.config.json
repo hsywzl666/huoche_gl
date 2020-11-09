@@ -1,0 +1,176 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": []
+  },
+  "appid": "wx724406e704fae5a6",
+  "projectname": "huoche_gj",
+  "libVersion": "2.8.1",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": 0,
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "pages/guanli/guanli",
+          "pathName": "pages/guanli/guanli",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/chezhu_zhuce/chezhu_zhuce",
+          "pathName": "pages/chezhu_zhuce/chezhu_zhuce",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/guanli/guanli",
+          "pathName": "pages/guanli/guanli",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/yanghu_yunying/yanghu_yunying",
+          "pathName": "pages/yanghu_yunying/yanghu_yunying",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/genghuansiji/genghuansiji",
+          "pathName": "pages/genghuansiji/genghuansiji",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/shouye/shouye",
+          "pathName": "pages/shouye/shouye",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/chezhu_index/chezhu_index",
+          "pathName": "pages/chezhu_index/chezhu_index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/siji_index/siji_index",
+          "pathName": "pages/siji_index/siji_index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/chezhu_index/chezhu_index",
+          "pathName": "pages/chezhu_index/chezhu_index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/chehuan_xiangqing/chehuan_xiangqing",
+          "pathName": "pages/chehuan_xiangqing/chehuan_xiangqing",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/reshou/reshou",
+          "pathName": "pages/reshou/reshou",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/jingying_xingqing/jingying_xingqing",
+          "pathName": "pages/jingying_xingqing/jingying_xingqing",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/zhengjian_index/zhengjian_index",
+          "pathName": "pages/zhengjian_index/zhengjian_index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/siji_danche_xiangqing/siji_danche_xiangqing",
+          "pathName": "pages/siji_danche_xiangqing/siji_danche_xiangqing",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

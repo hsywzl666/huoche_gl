@@ -1,0 +1,7 @@
+/* pages/genghuansiji/genghuansiji.wxss */
+.huansiji{
+  margin-top: 200rpx;
+  text-align: center;
+  font-size: 60rpx;
+  color: blue;
+}

@@ -1,0 +1,10 @@
+<!--pages/siji_baozhang/siji_baozhang.wxml-->
+<view class="box">
+<view class="yetou">
+  <text class="fd">{{chepai.pai_tou}}{{chepai.pai_wei}}</text>
+  <text class="text">车到{{guanlikaishi_riqi}}本金还有<text class="b">{{che_jiazhi}}</text>{{jinedanwei}}</text>
+  <text class="text">自注册以共来盈利<text class="p">{{che_jiazhi}}</text>{{jinedanwei}}</text>
+  <text class="text">平均每天盈利<text class="p">{{che_jiazhi}}</text>{{jinedanwei}}</text>
+</view>
+
+</view>

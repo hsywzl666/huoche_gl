@@ -1,0 +1,41 @@
+{
+  "pages": [
+
+    "pages/siji_danche_xiangqing/siji_danche_xiangqing",
+    "pages/zhengjian_index/zhengjian_index",
+    "pages/siji_baozhang/siji_baozhang",
+    "pages/jingying_xingqing/jingying_xingqing",
+    "pages/jiying_guanli/jiying_guanli",
+    "pages/siji_index/siji_index",
+    "pages/chezhu_index/chezhu_index",
+    "pages/shouye/shouye",
+    "pages/chezhu_zhuce/chezhu_zhuce",
+    "pages/genghuansiji/genghuansiji",
+    "pages/reshou/reshou"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/reshou/reshou",
+        "text": "二手车",
+        "iconPath": "images/che.png",
+        "selectedIconPath": "images/che.png"
+      },
+      {
+        "pagePath": "pages/shouye/shouye",
+        "text": "我的角色",
+        "iconPath": "images/wd.png",
+        "selectedIconPath": "images/wd.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "车管家",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,34 @@
+<view class="tou">
+  <text class="you" bindtap="chezhu_zhuce" >添加车牌</text>
+</view>
+
+<view class="box" wx:for="{{list}}" wx:key="index">
+      <view wx:if="{{item.paizhaose=='CornflowerBlue'}}" class="chepai" >                                              
+            <view class="z" style="background:CornflowerBlue; color: #ffffff;" >{{item.chepai.pai_tou}}</view>
+            <view  class="y" style="background:CornflowerBlue; color: #ffffff;" >{{item.chepai.pai_wei}}</view>               
+      </view>
+      <view  wx:elif="{{item.paizhaose=='#fafcfe'}}" class="chepai" >                                           
+            <view class="z" style=" background:orange;" >{{item.chepai.pai_tou}}</view>
+            <view class="y" style="background:#48b14e" >{{item.chepai.pai_wei}}</view>     
+            </view> 
+        <view  wx:elif="{{item.paizhaose=='#48b14e'}}" class="chepai" >                                           
+        <view class="z" style=" background:#48b14e;" >{{item.chepai.pai_tou}}</view>
+        <view class="y" style="background:#48b14e" >{{item.chepai.pai_wei}}</view>     
+        </view>
+        <view  wx:elif="{{item.paizhaose=='#f4a31f'}}" class="chepai" >                                           
+        <view class="z" style=" background:#f4a31f;" >{{item.chepai.pai_tou}}</view>
+        <view class="y" style="background:#f4a31f" >{{item.chepai.pai_wei}}</view>     
+        </view>
+  <view class="a" style="border: 1px solid {{chebiao_color}}">
+            <image
+            class="baoxian" src="../../images/{{item.baocun_chexing}}.png" style="display: inline-block;"></image>       
+  </view>
+  <block wx:if="{{item.jingying==true}}">
+    <view   class="b" style="border:6px solid  #a7a7aa;   background-color:{{color}}; ">
+           <view wx:if="{{!item.guanlikaishi_riqi}}" id="{{item._id}}" bindtap="jingyingguanli" >经营管理</view>
+          <view wx:else class="baoxian" bindtap="jingying_xingqing" id="{{item._id}}"><text>{{jine_xinzhi}}({{danwei}})</text></view>
+    </view>
+  </block>  
+    <view wx:else></view>
+
+</view>

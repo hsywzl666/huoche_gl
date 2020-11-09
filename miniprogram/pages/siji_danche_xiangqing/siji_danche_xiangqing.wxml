@@ -1,0 +1,63 @@
+<!--pages/siji_danche_xiangqing/siji_danche_xiangqing.wxml-->
+<view  wx:if="{{wb_xianshi!==false}}">
+  <view bindtap="fanhui">返回</view>
+  <view class="wb_kj">
+                <view class="biaotou">
+                  <view class="xiangmu">
+                    项目
+                  </view>
+                  <view class="jine">
+                    金额
+                  </view>
+                  <view class="jine">
+           
+                  </view>
+                </view>
+                <view class="biaoge">
+                  <view hidden="{{xiangqing_1}}" class="xiangqing">
+                    <input bindinput="xm_1" class="xiangmu_input" maxlength="10" />
+                    <input type="number" bindinput="jine_1" disabled="{{disabled_1}}" class="xiangmu_input" maxlength="4" placeholder="元" />
+                    <button hidden="{{yinceng_1}}" size="mini" style="color: #000;"  disabled="{{disabled_jiayi}}" bindtap="jiayi" >{{zengjiaxinxi}}</button>
+                  
+                  </view>
+                  <view hidden="{{xiangqing_2}}" class="xiangqing">
+                    <input bindinput="xm_2" class="xiangmu_input" maxlength="10"  />
+                    <input type="number" bindinput="jine_2" disabled="{{disabled_2}}" class="xiangmu_input" maxlength="4" placeholder="元" />
+                  <button hidden="{{yinceng_2}}" size="mini" style="color: #000;"  disabled="{{disabled_jiayi}}" bindtap="jiayi" >{{zengjiaxinxi}}</button>
+                  </view>
+                  <view hidden="{{xiangqing_3}}" class="xiangqing">
+                    <input bindinput="xm_3" class="xiangmu_input" maxlength="10"  />
+                    <input type="number" bindinput="jine_3" disabled="{{disabled_3}}" class="xiangmu_input" maxlength="4" placeholder="元" />
+                    <button hidden="{{yinceng_3}}" size="mini" style="color: #000;"  disabled="{{disabled_jiayi}}" bindtap="jiayi" >{{zengjiaxinxi}}</button>
+                  </view>
+                  <view hidden="{{xiangqing_4}}" class="xiangqing">
+                    <input bindinput="xm_4" class="xiangmu_input" maxlength="10" />
+                    <input type="number" bindinput="jine_4" disabled="{{disabled_4}}" class="xiangmu_input" maxlength="4" placeholder="元" />
+                    <button hidden="{{yinceng_4}}" size="mini" style="color: #000;"  disabled="{{disabled_jiayi}}" bindtap="jiayi" >{{zengjiaxinxi}}</button>
+                  </view>
+                  <view hidden="{{xiangqing_5}}" class="xiangqing">
+                    <input bindinput="xm_5" class="xiangmu_input" maxlength="10"  />
+                    <input type="number" bindinput="jine_5" disabled="{{disabled_5}}" class="xiangmu_input" maxlength="4" placeholder="元" />
+                    <button hidden="{{yinceng_5}}" size="mini" style="color: #000;"  disabled="{{disabled_jiayi}}" bindtap="jiayi" >{{zengjiaxinxi}}</button>
+                  </view>
+                  <view hidden="{{xiangqing_6}}" class="xiangqing">
+                    <input bindinput="xm_6" class="xiangmu_input" maxlength="10"  />
+                    <input type="number" bindinput="jine_6" disabled="{{disabled_6}}" class="xiangmu_input" maxlength="4" placeholder="元" />
+                    <button hidden="{{yinceng_6}}" size="mini" style="color: #000;"  disabled="{{disabled_jiayi}}" bindtap="jiayi" >{{zengjiaxinxi}}</button>
+                  </view>
+                  <view bindtap="jine_huoqujiaodian"  class="zongjine">
+                   共计 {{zongjine}}元
+                  </view>
+                
+                </view>
+  </view>
+</view>
+<view  wx:elif="{{fy_xianshi!==false}}">
+  <view bindtap="fanhui">返回 </view>
+  <view class="wb_kj"></view>
+</view>
+<view wx:else class="kj">
+  <view class="wb" bindtap="wb">维护保养</view>
+  <view class="fy" bindtap="fy">出车费用</view>
+</view>
+

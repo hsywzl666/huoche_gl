@@ -1,0 +1,9 @@
+<!--pages/reshou/reshou.wxml-->
+<view>
+<view class="k" >
+  <view class="z"></view>
+  <view class="y"></view>
+</view >
+你好
+</view>
+

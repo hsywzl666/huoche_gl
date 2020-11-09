@@ -1,0 +1,10 @@
+<!--pages/jiying_guanli/jiying_guanli.wxml-->
+<view>
+<view class="xianshi" >购车款{{jine_xinzhi}}{{danwei}}</view>
+<view class="xianshi-2" >已盈利{{yingli_xinzhi}}{{yingli_danwei}}</view>
+<view class="xianshi-1" >{{gouche_riqi}}</view>
+        <input class="weui-input" maxlength="7" bindinput="houqu_gouchejine" auto-focus placeholder="购车金额"/>
+        <input class="weui-input" maxlength="7" bindinput="houqu_yingli" auto-focus placeholder="本车已经盈利(未盈利请忽略)"/>
+        <button bindtap="sc">上传</button>
+ </view>
+

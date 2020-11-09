@@ -1,0 +1,41 @@
+/* pages/jiying_guanli/jiying_guanli.wxss */
+
+.weui-input{
+  border-bottom: 1px solid ;
+  text-align: center;
+  margin-bottom: 20px;
+
+
+}
+.xianshi{
+  width: 84%;
+  height: 60px;
+  margin: auto;
+  border: 1px solid ;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: DarkGreen;
+  font-weight:bold
+}
+.xianshi-2{
+  width: 84%;
+  height: 60px;
+  margin: auto;
+  border: 1px solid ;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: 	Red;
+  font-weight:bold
+}
+.xianshi-1{
+  width: 84%;
+  height: 60px;
+  margin: auto;
+  border: 1px solid ;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: 	Black;
+}

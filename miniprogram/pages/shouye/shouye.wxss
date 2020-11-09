@@ -1,0 +1,24 @@
+.chuangkou{
+  width: 600rpx;
+  height: 800rpx;
+  
+  margin: auto;
+  /* border: solid blue; */
+  margin-top: 100rpx;
+}
+.sj{
+  margin-top: 20rpx;
+  width:580rpx;
+  height:340rpx;
+}
+.chezhu{
+  margin-top: 20rpx;
+  width:580rpx;
+  height:340rpx;
+}
+.ziti{
+  margin-left: 220rpx;
+  color:   green;
+  font-weight:bold;
+
+}

@@ -1,0 +1,32 @@
+<view class='top'>
+  <view class='top-text'> 车牌号</view>
+  <!-- 下拉框 -->
+  <view class='top-selected' bindtap='bindShowMsg'>
+    <text>{{grade_name}}</text>
+    
+  </view>
+  <input type="text" maxlength="6"   name="textfield"  bindinput="yaoqingmma"/>
+  <!-- 下拉需要显示的列表 -->
+  <view class="select_box" wx:if="{{select}}">
+    <view wx:for="{{grades}}" wx:key="unique">
+      <view class="select_one" bindtap="mySelect" data-name="{{item}}">{{item}}</view>
+    </view>
+  </view>
+</view>
+<view  wx:if="{{pai_color=='#fafcfe'}}" bindtap="bianse"  class="pai">
+  <view class="d_tou"><text>{{pai_tou}}</text> </view>
+  <view class="d_wei"><text>{{haoma}}</text></view>
+</view>
+<view wx:else  bindtap="bianse" style=" background:{{pai_color}}; color: {{color}};"  class="pai">
+<text >{{pai_tou}}{{haoma}}</text>
+</view>
+
+<view bindtap="huantu">
+<image
+class="baoxian" src="{{chexing}}" ></image>  
+</view>
+<view class="xuanze" wx:if="{{xianshi==true}}">
+<button bindtap="jingyong">经营</button>
+<button  bindtap="daibu">代步</button>
+</view>
+<view class="zc" bindtap="zc" wx:else >{{daibu_jingying}} 注册</view>
